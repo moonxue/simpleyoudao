@@ -1,0 +1,5 @@
+#!/bin/sh
+cd /opt/simpleyoudao
+python youdao.py
+cd /opt/simpleyoudao
+python youdao.py

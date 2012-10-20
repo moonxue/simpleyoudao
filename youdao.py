@@ -5,7 +5,7 @@ from PyQt4 import QtCore, QtGui
 from PyQt4.QtCore import Qt
 from PyQt4.QtGui import QIcon, QSystemTrayIcon, QAction, QMenu
 from threading import Thread
-from os import popen
+from os import popen,system
 from time import sleep
 import requests
 import json
@@ -59,6 +59,7 @@ class StartQT4(Windows):
 		self.trayIcon.setContextMenu(self.menu)
 		self.move(1100,50)
 		#开启监听线程
+		system("xclip -f /dev/null")           #清空剪切板
 		listener = Thread(target=listenMouse, args=(self.ui,))
 		listener.setDaemon(True)
 		listener.start()
