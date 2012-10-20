@@ -7,13 +7,14 @@ Requestment:
  * python2.7
  * pyqt4
  * xclip
-==================================================
 TODO:
 add setup.py
 fix some bug in MainWindow
-___________________________________________________
+
 author: MoonXue
+
 mail: firstxueyue@gmail.com
+
 agreement: GPL
-___________________________________________________
+
 
